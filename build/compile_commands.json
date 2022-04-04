@@ -1,0 +1,22 @@
+[
+{
+  "directory": "C:/Users/arekj/OneDrive/Pulpit/Rubik_My/build",
+  "command": "C:\\PROGRA~1\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe   -g -std=gnu++14 -o CMakeFiles\\Exe.dir\\src\\main.cpp.obj -c C:\\Users\\arekj\\OneDrive\\Pulpit\\Rubik_My\\src\\main.cpp",
+  "file": "C:/Users/arekj/OneDrive/Pulpit/Rubik_My/src/main.cpp"
+},
+{
+  "directory": "C:/Users/arekj/OneDrive/Pulpit/Rubik_My/build",
+  "command": "C:\\PROGRA~1\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe   -g -std=gnu++14 -o CMakeFiles\\Exe.dir\\src\\Rubik.cpp.obj -c C:\\Users\\arekj\\OneDrive\\Pulpit\\Rubik_My\\src\\Rubik.cpp",
+  "file": "C:/Users/arekj/OneDrive/Pulpit/Rubik_My/src/Rubik.cpp"
+},
+{
+  "directory": "C:/Users/arekj/OneDrive/Pulpit/Rubik_My/build",
+  "command": "C:\\PROGRA~1\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe   -g -std=gnu++14 -o CMakeFiles\\Exe.dir\\src\\Wall.cpp.obj -c C:\\Users\\arekj\\OneDrive\\Pulpit\\Rubik_My\\src\\Wall.cpp",
+  "file": "C:/Users/arekj/OneDrive/Pulpit/Rubik_My/src/Wall.cpp"
+},
+{
+  "directory": "C:/Users/arekj/OneDrive/Pulpit/Rubik_My/build",
+  "command": "C:\\PROGRA~1\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe   -g -std=gnu++14 -o CMakeFiles\\Exe.dir\\src\\Element.cpp.obj -c C:\\Users\\arekj\\OneDrive\\Pulpit\\Rubik_My\\src\\Element.cpp",
+  "file": "C:/Users/arekj/OneDrive/Pulpit/Rubik_My/src/Element.cpp"
+}
+]
