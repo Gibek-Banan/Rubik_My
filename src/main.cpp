@@ -1,6 +1,7 @@
 #include <iostream>
 #include "Rubik.hpp"
 #include "Wall.hpp"
+#include <random>
 
 void createWallStr(std::string wallStr[9], const std::string &color)
 {
@@ -35,16 +36,44 @@ Wall **initRubik(Wall **walls, std::string *colors)
     return walls;
 }
 
-class Entity
+void shuffle(Rubik &rubik)
 {
-public:
-    int p[2];
-    int a = 0;
-    Entity()
+    std::random_device dev;
+    std::mt19937 rng(dev());
+    std::uniform_int_distribution<std::mt19937::result_type> dist6(1, 3); // distribution in range [1, 6]
+
+    int n;
+    n = dist6(rng);
+    for (int i = 0; i < n; i++)
     {
-        a = 2;
+        rubik.R();
     }
-};
+    n = dist6(rng);
+    for (int i = 0; i < n; i++)
+    {
+        rubik.L();
+    }
+    n = dist6(rng);
+    for (int i = 0; i < n; i++)
+    {
+        rubik.U();
+    }
+    n = dist6(rng);
+    for (int i = 0; i < n; i++)
+    {
+        rubik.D();
+    }
+    n = dist6(rng);
+    for (int i = 0; i < n; i++)
+    {
+        rubik.F();
+    }
+    n = dist6(rng);
+    for (int i = 0; i < n; i++)
+    {
+        rubik.B();
+    }
+}
 
 int main()
 {
@@ -55,6 +84,7 @@ int main()
     walls = initRubik(walls, colors);
     // log(temp);
     Rubik rubik(walls);
+    shuffle(rubik);
     rubik.show();
 
     int input = 0;
@@ -72,7 +102,9 @@ int main()
         std::cout << " / 55. Fi" << std::endl;
         std::cout << "6. B";
         std::cout << " / 66. Bi" << std::endl;
-        std::cout << "7. End" << std::endl
+        std::cout << "7. Initial state" << std::endl;
+        std::cout << "8. Shuffle" << std::endl;
+        std::cout << "9. End" << std::endl
                   << std::endl;
         std::cout << "Operation = ";
         std::cin >> input;
@@ -137,14 +169,17 @@ int main()
             break;
 
         case 7:
+            break;
+        case 8:
+            shuffle(rubik);
+            rubik.show();
+            break;
+        case 9:
             return 0;
             break;
 
         default:
             std::cout << "Wrong key!" << std::endl;
-            break;
         }
-        // Entity e[9];
-        // std::cout << e[2].a;
     }
 }

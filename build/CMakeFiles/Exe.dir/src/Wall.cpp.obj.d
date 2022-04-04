@@ -130,5 +130,4 @@ CMakeFiles/Exe.dir/src/Wall.cpp.obj: \
  C:/PROGRA~1/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/array \
  C:/PROGRA~1/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/utility \
  C:/PROGRA~1/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_relops.h \
- C:\Users\arekj\OneDrive\Pulpit\Rubik_My\src\Element.hpp \
- C:\Users\arekj\OneDrive\Pulpit\Rubik_My\src\ElementState.hpp
+ C:\Users\arekj\OneDrive\Pulpit\Rubik_My\src\Element.hpp
