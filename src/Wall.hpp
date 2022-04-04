@@ -15,7 +15,7 @@ public:
             e[i].color = "N";
         }
     }
-    Wall(const std::string s[9])
+    Wall(std::string s[9])
     {
         for (int i = 0; i < 9; i++)
         {

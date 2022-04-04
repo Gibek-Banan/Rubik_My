@@ -6,39 +6,53 @@
 class Rubik
 {
 private:
-    // Wall wFront;
-    // Wall wBack;
-    // Wall wTop;
-    // Wall wBottom;
-    // Wall wRight;
-    // Wall wLeft;
-    Wall **walls;
+    Wall walls[6];
+    std::string colors[6] = {"W", "G", "R", "U", "O", "Y"};
     int r[3] = {2, 5, 8};
     int l[3] = {0, 3, 6};
     int t[3] = {0, 1, 2};
     int b[3] = {6, 7, 8};
 
 public:
-    Rubik(Wall **walls) : walls(walls)
+    Rubik(Wall *walls)
     {
         if (walls == nullptr)
             std::abort();
-    }
-    ~Rubik()
-    {
         for (int i = 0; i < 6; i++)
         {
-            delete walls[i];
+            this->walls[i] = walls[i];
         }
-        delete[] walls;
+    }
+
+    Rubik()
+    {
+        init();
+    }
+
+    ~Rubik()
+    {
         // std::cout << "Rubik destructor" << std::endl;
     }
+    void init()
+    {
+        std::string temp[9];
+        for (int i = 0; i < 6; i++)
+        {
+            for (int j = 0; j < 9; j++)
+            {
+                temp[j] = colors[i];
+            }
+            Wall w = Wall(temp);
+            walls[i] = w;
+        }
+    }
+
     void show()
     {
         std::string s[6];
         for (int i = 0; i < 6; i++)
         {
-            s[i] = walls[i]->getStr();
+            s[i] = walls[i].getStr();
         }
         std::cout << "    " << s[0].substr(0, 3) << std::endl;
         std::cout << "    " << s[0].substr(3, 3) << std::endl;
@@ -65,13 +79,13 @@ public:
         Wall temp;
         for (int i = 0; i < n; i++)
         {
-            move(temp, r, *walls[2], r);
-            move(*walls[2], r, *walls[5], r);
-            move(*walls[5], r, *walls[4], r);
-            move(*walls[4], r, *walls[0], r);
-            move(*walls[0], r, temp, r);
+            move(temp, r, walls[2], r);
+            move(walls[2], r, walls[5], r);
+            move(walls[5], r, walls[4], r);
+            move(walls[4], r, walls[0], r);
+            move(walls[0], r, temp, r);
 
-            walls[3]->rotateR();
+            walls[3].rotateR();
         }
     }
     void Ri(int n = 1)
@@ -79,13 +93,13 @@ public:
         Wall temp;
         for (int i = 0; i < n; i++)
         {
-            move(temp, r, *walls[2], r);
-            move(*walls[2], r, *walls[0], r);
-            move(*walls[0], r, *walls[4], r);
-            move(*walls[4], r, *walls[5], r);
-            move(*walls[5], r, temp, r);
+            move(temp, r, walls[2], r);
+            move(walls[2], r, walls[0], r);
+            move(walls[0], r, walls[4], r);
+            move(walls[4], r, walls[5], r);
+            move(walls[5], r, temp, r);
 
-            walls[3]->rotateL();
+            walls[3].rotateL();
         }
     }
     // L
@@ -94,13 +108,13 @@ public:
         Wall temp;
         for (int i = 0; i < n; i++)
         {
-            move(temp, l, *walls[2], l);
-            move(*walls[2], l, *walls[0], l);
-            move(*walls[0], l, *walls[4], l);
-            move(*walls[4], l, *walls[5], l);
-            move(*walls[5], l, temp, l);
+            move(temp, l, walls[2], l);
+            move(walls[2], l, walls[0], l);
+            move(walls[0], l, walls[4], l);
+            move(walls[4], l, walls[5], l);
+            move(walls[5], l, temp, l);
 
-            walls[1]->rotateR();
+            walls[1].rotateR();
         }
     }
     void Li(int n = 1)
@@ -108,13 +122,13 @@ public:
         Wall temp;
         for (int i = 0; i < n; i++)
         {
-            move(temp, l, *walls[2], l);
-            move(*walls[2], l, *walls[5], l);
-            move(*walls[5], l, *walls[4], l);
-            move(*walls[4], l, *walls[0], l);
-            move(*walls[0], l, temp, l);
+            move(temp, l, walls[2], l);
+            move(walls[2], l, walls[5], l);
+            move(walls[5], l, walls[4], l);
+            move(walls[4], l, walls[0], l);
+            move(walls[0], l, temp, l);
 
-            walls[1]->rotateL();
+            walls[1].rotateL();
         }
     }
 
@@ -124,13 +138,13 @@ public:
         Wall temp;
         for (int i = 0; i < n; i++)
         {
-            move(temp, t, *walls[2], t);
-            move(*walls[2], t, *walls[3], t);
-            move(*walls[3], t, *walls[4], t);
-            move(*walls[4], t, *walls[1], t);
-            move(*walls[1], t, temp, t);
+            move(temp, t, walls[2], t);
+            move(walls[2], t, walls[3], t);
+            move(walls[3], t, walls[4], t);
+            move(walls[4], t, walls[1], t);
+            move(walls[1], t, temp, t);
 
-            walls[0]->rotateR();
+            walls[0].rotateR();
         }
     }
     void Ui(int n = 1)
@@ -138,13 +152,13 @@ public:
         Wall temp;
         for (int i = 0; i < n; i++)
         {
-            move(temp, t, *walls[2], t);
-            move(*walls[2], t, *walls[1], t);
-            move(*walls[1], t, *walls[4], t);
-            move(*walls[4], t, *walls[3], t);
-            move(*walls[3], t, temp, t);
+            move(temp, t, walls[2], t);
+            move(walls[2], t, walls[1], t);
+            move(walls[1], t, walls[4], t);
+            move(walls[4], t, walls[3], t);
+            move(walls[3], t, temp, t);
 
-            walls[0]->rotateL();
+            walls[0].rotateL();
         }
     }
     // D
@@ -153,13 +167,13 @@ public:
         Wall temp;
         for (int i = 0; i < n; i++)
         {
-            move(temp, b, *walls[2], b);
-            move(*walls[2], b, *walls[1], b);
-            move(*walls[1], b, *walls[4], b);
-            move(*walls[4], b, *walls[3], b);
-            move(*walls[3], b, temp, b);
+            move(temp, b, walls[2], b);
+            move(walls[2], b, walls[1], b);
+            move(walls[1], b, walls[4], b);
+            move(walls[4], b, walls[3], b);
+            move(walls[3], b, temp, b);
 
-            walls[5]->rotateR();
+            walls[5].rotateR();
         }
     }
     void Di(int n = 1)
@@ -167,13 +181,13 @@ public:
         Wall temp;
         for (int i = 0; i < n; i++)
         {
-            move(temp, b, *walls[2], b);
-            move(*walls[2], b, *walls[3], b);
-            move(*walls[3], b, *walls[4], b);
-            move(*walls[4], b, *walls[1], b);
-            move(*walls[1], b, temp, b);
+            move(temp, b, walls[2], b);
+            move(walls[2], b, walls[3], b);
+            move(walls[3], b, walls[4], b);
+            move(walls[4], b, walls[1], b);
+            move(walls[1], b, temp, b);
 
-            walls[5]->rotateL();
+            walls[5].rotateL();
         }
     }
     // F
@@ -182,13 +196,13 @@ public:
         Wall temp;
         for (int i = 0; i < n; i++)
         {
-            move(temp, b, *walls[0], b);
-            move(*walls[0], b, *walls[1], r);
-            move(*walls[1], r, *walls[5], t);
-            move(*walls[5], t, *walls[3], l);
-            move(*walls[3], l, temp, b);
+            move(temp, b, walls[0], b);
+            move(walls[0], b, walls[1], r);
+            move(walls[1], r, walls[5], t);
+            move(walls[5], t, walls[3], l);
+            move(walls[3], l, temp, b);
 
-            walls[2]->rotateR();
+            walls[2].rotateR();
         }
     }
     void Fi(int n = 1)
@@ -196,13 +210,13 @@ public:
         Wall temp;
         for (int i = 0; i < n; i++)
         {
-            move(temp, b, *walls[0], b);
-            move(*walls[0], b, *walls[3], l);
-            move(*walls[3], l, *walls[5], t);
-            move(*walls[5], t, *walls[1], r);
-            move(*walls[1], r, temp, b);
+            move(temp, b, walls[0], b);
+            move(walls[0], b, walls[3], l);
+            move(walls[3], l, walls[5], t);
+            move(walls[5], t, walls[1], r);
+            move(walls[1], r, temp, b);
 
-            walls[2]->rotateL();
+            walls[2].rotateL();
         }
     }
     // B
@@ -211,13 +225,13 @@ public:
         Wall temp;
         for (int i = 0; i < n; i++)
         {
-            move(temp, t, *walls[0], t);
-            move(*walls[0], t, *walls[3], r);
-            move(*walls[3], r, *walls[5], b);
-            move(*walls[5], b, *walls[1], l);
-            move(*walls[1], l, temp, t);
+            move(temp, t, walls[0], t);
+            move(walls[0], t, walls[3], r);
+            move(walls[3], r, walls[5], b);
+            move(walls[5], b, walls[1], l);
+            move(walls[1], l, temp, t);
 
-            walls[4]->rotateR();
+            walls[4].rotateR();
         }
     }
     void Bi(int n = 1)
@@ -225,12 +239,12 @@ public:
         Wall temp;
         for (int i = 0; i < n; i++)
         {
-            move(temp, t, *walls[0], t);
-            move(*walls[0], t, *walls[1], l);
-            move(*walls[1], l, *walls[5], b);
-            move(*walls[5], b, *walls[3], r);
-            move(*walls[3], r, temp, t);
-            walls[4]->rotateL();
+            move(temp, t, walls[0], t);
+            move(walls[0], t, walls[1], l);
+            move(walls[1], l, walls[5], b);
+            move(walls[5], b, walls[3], r);
+            move(walls[3], r, temp, t);
+            walls[4].rotateL();
         }
     }
 };

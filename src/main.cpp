@@ -3,39 +3,6 @@
 #include "Wall.hpp"
 #include <random>
 
-void createWallStr(std::string wallStr[9], const std::string &color)
-{
-    for (int i = 0; i < 9; i++)
-    {
-        wallStr[i] = color;
-    }
-}
-
-void log(const std::string &s)
-{
-    std::cout << s << std::endl;
-}
-
-void log(const std::string s[9])
-{
-    for (int i = 0; i < 9; i++)
-    {
-        std::cout << s[i] << std::endl;
-    }
-}
-
-Wall **initRubik(Wall **walls, std::string *colors)
-{
-    walls = new Wall *[6];
-    std::string temp[9];
-    for (int i = 0; i < 6; i++)
-    {
-        createWallStr(temp, colors[i]);
-        walls[i] = new Wall(temp);
-    }
-    return walls;
-}
-
 void shuffle(Rubik &rubik)
 {
     std::random_device dev;
@@ -77,14 +44,12 @@ void shuffle(Rubik &rubik)
 
 int main()
 {
-    Wall **walls;
-    std::string colors[6] = {"W", "R", "G", "U", "Y", "O"};
-    std::string temp[9];
-    createWallStr(temp, colors[0]);
-    walls = initRubik(walls, colors);
-    // log(temp);
-    Rubik rubik(walls);
-    shuffle(rubik);
+    // std::string s1[9] = {"a", "a", "a", "a", "a", "a", "a", "a", "a"};
+    // Wall w1(s1);
+    // Wall walls[6] = {w1, w1, w1, w1, w1, w1};
+    // Rubik rubik(walls);
+    Rubik rubik;
+    // shuffle(rubik);
     rubik.show();
 
     int input = 0;
@@ -169,6 +134,8 @@ int main()
             break;
 
         case 7:
+            rubik.init();
+            rubik.show();
             break;
         case 8:
             shuffle(rubik);
