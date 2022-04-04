@@ -45,6 +45,7 @@ public:
         a = 2;
     }
 };
+
 int main()
 {
     Wall **walls;
@@ -52,11 +53,98 @@ int main()
     std::string temp[9];
     createWallStr(temp, colors[0]);
     walls = initRubik(walls, colors);
-    log(temp);
+    // log(temp);
     Rubik rubik(walls);
     rubik.show();
-    rubik.R();
-    rubik.show();
-    // Entity e[9];
-    // std::cout << e[2].a;
+
+    int input = 0;
+    while (1)
+    {
+        std::cout << "1. R";
+        std::cout << " / 11. Ri" << std::endl;
+        std::cout << "2. L";
+        std::cout << " / 22. Li" << std::endl;
+        std::cout << "3. U";
+        std::cout << " / 33. Ui" << std::endl;
+        std::cout << "4. D";
+        std::cout << " / 44. Di" << std::endl;
+        std::cout << "5. F";
+        std::cout << " / 55. Fi" << std::endl;
+        std::cout << "6. B";
+        std::cout << " / 66. Bi" << std::endl;
+        std::cout << "7. End" << std::endl
+                  << std::endl;
+        std::cout << "Operation = ";
+        std::cin >> input;
+        switch (input)
+        {
+        case 1:
+            rubik.R();
+            rubik.show();
+            break;
+        case 11:
+            rubik.Ri();
+            rubik.show();
+            break;
+        case 2:
+            rubik.L();
+            rubik.show();
+            break;
+
+        case 22:
+            rubik.Li();
+            rubik.show();
+            break;
+
+        case 3:
+            rubik.U();
+            rubik.show();
+            break;
+
+        case 33:
+            rubik.Ui();
+            rubik.show();
+            break;
+
+        case 4:
+            rubik.D();
+            rubik.show();
+            break;
+
+        case 44:
+            rubik.Di();
+            rubik.show();
+            break;
+
+        case 5:
+            rubik.F();
+            rubik.show();
+            break;
+
+        case 55:
+            rubik.Fi();
+            rubik.show();
+            break;
+
+        case 6:
+            rubik.B();
+            rubik.show();
+            break;
+
+        case 66:
+            rubik.Bi();
+            rubik.show();
+            break;
+
+        case 7:
+            return 0;
+            break;
+
+        default:
+            std::cout << "Wrong key!" << std::endl;
+            break;
+        }
+        // Entity e[9];
+        // std::cout << e[2].a;
+    }
 }
