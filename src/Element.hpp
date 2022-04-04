@@ -1,17 +1,25 @@
 #ifndef ELEMENTHPP
 #define ELEMENTHPP
-#include <string>
-#include "ToChange.hpp"
+#include <iostream>
+#include "ElementState.hpp"
 class Element
 {
-private:
-    std::string color;
-    ToChange state;
-
 public:
-    Element(const std::string &color) : color(color)
+    std::string color;
+    ElementState state;
+
+    Element()
     {
-        state = ToChange::dontChange;
+        color = "N";
+        state = ElementState::on;
+    }
+    Element(const std::string color) : color(color)
+    {
+        state = ElementState::on;
+    }
+    ~Element()
+    {
+        // std::cout << "Element destructor" << std::endl;
     }
 };
 #endif
