@@ -7,39 +7,28 @@ void shuffle(CubeDisplay &cd)
 {
     std::random_device dev;
     std::mt19937 rng(dev());
-    std::uniform_int_distribution<std::mt19937::result_type> dist6(1, 3); // distribution in range [1, 6]
+    std::uniform_int_distribution<std::mt19937::result_type> dist6(1, 2); // distribution in range [1, 6]
 
-    int n;
-    n = dist6(rng);
-    for (int i = 0; i < n; i++)
-    {
-        cd.R();
-    }
-    n = dist6(rng);
-    for (int i = 0; i < n; i++)
-    {
-        cd.L();
-    }
-    n = dist6(rng);
-    for (int i = 0; i < n; i++)
-    {
-        cd.U();
-    }
-    n = dist6(rng);
-    for (int i = 0; i < n; i++)
-    {
-        cd.D();
-    }
-    n = dist6(rng);
-    for (int i = 0; i < n; i++)
-    {
-        cd.F();
-    }
-    n = dist6(rng);
-    for (int i = 0; i < n; i++)
-    {
-        cd.B();
-    }
+    // int n;
+    // n = dist6(rng);
+    // cd.R(n);
+    // n = dist6(rng);
+    // cd.L(n);
+    // n = dist6(rng);
+    // cd.U(n);
+    // n = dist6(rng);
+    // cd.D(n);
+    // n = dist6(rng);
+    // cd.F(n);
+    // n = dist6(rng);
+    // cd.B(n);
+
+    cd.R();
+    cd.L();
+    cd.U();
+    cd.D();
+    cd.F();
+    cd.B();
 }
 
 int main()

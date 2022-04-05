@@ -7,6 +7,7 @@ class CubeDisplay
 {
 private:
     std::string colors[6] = {"W", "G", "R", "U", "O", "Y"};
+    // std::string colors[6] = {"U", "L", "F", "R", "B", "D"};
     int r[3] = {2, 5, 8};
     int l[3] = {0, 3, 6};
     int t[3] = {0, 1, 2};
