@@ -1,6 +1,6 @@
 CMakeFiles/Exe.dir/src/Element.cpp.obj: \
  C:\Users\arekj\OneDrive\Pulpit\Rubik_My\src\Element.cpp \
- C:\Users\arekj\OneDrive\Pulpit\Rubik_My\src\Element.hpp \
+ C:\Users\arekj\OneDrive\Pulpit\Rubik_My\src\Element.h \
  C:/PROGRA~1/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream \
  C:/PROGRA~1/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
  C:/PROGRA~1/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \

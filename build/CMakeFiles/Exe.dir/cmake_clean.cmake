@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Exe.dir/src/CubeDisplay.cpp.obj"
+  "CMakeFiles/Exe.dir/src/CubeDisplay.cpp.obj.d"
   "CMakeFiles/Exe.dir/src/Element.cpp.obj"
   "CMakeFiles/Exe.dir/src/Element.cpp.obj.d"
-  "CMakeFiles/Exe.dir/src/Rubik.cpp.obj"
-  "CMakeFiles/Exe.dir/src/Rubik.cpp.obj.d"
   "CMakeFiles/Exe.dir/src/Wall.cpp.obj"
   "CMakeFiles/Exe.dir/src/Wall.cpp.obj.d"
   "CMakeFiles/Exe.dir/src/main.cpp.obj"

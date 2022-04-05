@@ -6,8 +6,8 @@
 },
 {
   "directory": "C:/Users/arekj/OneDrive/Pulpit/Rubik_My/build",
-  "command": "C:\\PROGRA~1\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe   -g -std=gnu++14 -o CMakeFiles\\Exe.dir\\src\\Rubik.cpp.obj -c C:\\Users\\arekj\\OneDrive\\Pulpit\\Rubik_My\\src\\Rubik.cpp",
-  "file": "C:/Users/arekj/OneDrive/Pulpit/Rubik_My/src/Rubik.cpp"
+  "command": "C:\\PROGRA~1\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe   -g -std=gnu++14 -o CMakeFiles\\Exe.dir\\src\\CubeDisplay.cpp.obj -c C:\\Users\\arekj\\OneDrive\\Pulpit\\Rubik_My\\src\\CubeDisplay.cpp",
+  "file": "C:/Users/arekj/OneDrive/Pulpit/Rubik_My/src/CubeDisplay.cpp"
 },
 {
   "directory": "C:/Users/arekj/OneDrive/Pulpit/Rubik_My/build",

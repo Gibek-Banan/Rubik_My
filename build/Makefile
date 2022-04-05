@@ -128,6 +128,30 @@ Exe/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Exe.dir\build.make CMakeFiles/Exe.dir/build
 .PHONY : Exe/fast
 
+src/CubeDisplay.obj: src/CubeDisplay.cpp.obj
+.PHONY : src/CubeDisplay.obj
+
+# target to build an object file
+src/CubeDisplay.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Exe.dir\build.make CMakeFiles/Exe.dir/src/CubeDisplay.cpp.obj
+.PHONY : src/CubeDisplay.cpp.obj
+
+src/CubeDisplay.i: src/CubeDisplay.cpp.i
+.PHONY : src/CubeDisplay.i
+
+# target to preprocess a source file
+src/CubeDisplay.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Exe.dir\build.make CMakeFiles/Exe.dir/src/CubeDisplay.cpp.i
+.PHONY : src/CubeDisplay.cpp.i
+
+src/CubeDisplay.s: src/CubeDisplay.cpp.s
+.PHONY : src/CubeDisplay.s
+
+# target to generate assembly for a file
+src/CubeDisplay.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Exe.dir\build.make CMakeFiles/Exe.dir/src/CubeDisplay.cpp.s
+.PHONY : src/CubeDisplay.cpp.s
+
 src/Element.obj: src/Element.cpp.obj
 .PHONY : src/Element.obj
 
@@ -151,30 +175,6 @@ src/Element.s: src/Element.cpp.s
 src/Element.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Exe.dir\build.make CMakeFiles/Exe.dir/src/Element.cpp.s
 .PHONY : src/Element.cpp.s
-
-src/Rubik.obj: src/Rubik.cpp.obj
-.PHONY : src/Rubik.obj
-
-# target to build an object file
-src/Rubik.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Exe.dir\build.make CMakeFiles/Exe.dir/src/Rubik.cpp.obj
-.PHONY : src/Rubik.cpp.obj
-
-src/Rubik.i: src/Rubik.cpp.i
-.PHONY : src/Rubik.i
-
-# target to preprocess a source file
-src/Rubik.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Exe.dir\build.make CMakeFiles/Exe.dir/src/Rubik.cpp.i
-.PHONY : src/Rubik.cpp.i
-
-src/Rubik.s: src/Rubik.cpp.s
-.PHONY : src/Rubik.s
-
-# target to generate assembly for a file
-src/Rubik.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Exe.dir\build.make CMakeFiles/Exe.dir/src/Rubik.cpp.s
-.PHONY : src/Rubik.cpp.s
 
 src/Wall.obj: src/Wall.cpp.obj
 .PHONY : src/Wall.obj
@@ -233,12 +233,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Exe
+	@echo ... src/CubeDisplay.obj
+	@echo ... src/CubeDisplay.i
+	@echo ... src/CubeDisplay.s
 	@echo ... src/Element.obj
 	@echo ... src/Element.i
 	@echo ... src/Element.s
-	@echo ... src/Rubik.obj
-	@echo ... src/Rubik.i
-	@echo ... src/Rubik.s
 	@echo ... src/Wall.obj
 	@echo ... src/Wall.i
 	@echo ... src/Wall.s

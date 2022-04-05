@@ -82,19 +82,19 @@ CMakeFiles/Exe.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Exe.dir/src/main.cpp.s"
 	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\arekj\OneDrive\Pulpit\Rubik_My\src\main.cpp -o CMakeFiles\Exe.dir\src\main.cpp.s
 
-CMakeFiles/Exe.dir/src/Rubik.cpp.obj: CMakeFiles/Exe.dir/flags.make
-CMakeFiles/Exe.dir/src/Rubik.cpp.obj: ../src/Rubik.cpp
-CMakeFiles/Exe.dir/src/Rubik.cpp.obj: CMakeFiles/Exe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\arekj\OneDrive\Pulpit\Rubik_My\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Exe.dir/src/Rubik.cpp.obj"
-	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Exe.dir/src/Rubik.cpp.obj -MF CMakeFiles\Exe.dir\src\Rubik.cpp.obj.d -o CMakeFiles\Exe.dir\src\Rubik.cpp.obj -c C:\Users\arekj\OneDrive\Pulpit\Rubik_My\src\Rubik.cpp
+CMakeFiles/Exe.dir/src/CubeDisplay.cpp.obj: CMakeFiles/Exe.dir/flags.make
+CMakeFiles/Exe.dir/src/CubeDisplay.cpp.obj: ../src/CubeDisplay.cpp
+CMakeFiles/Exe.dir/src/CubeDisplay.cpp.obj: CMakeFiles/Exe.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\arekj\OneDrive\Pulpit\Rubik_My\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Exe.dir/src/CubeDisplay.cpp.obj"
+	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Exe.dir/src/CubeDisplay.cpp.obj -MF CMakeFiles\Exe.dir\src\CubeDisplay.cpp.obj.d -o CMakeFiles\Exe.dir\src\CubeDisplay.cpp.obj -c C:\Users\arekj\OneDrive\Pulpit\Rubik_My\src\CubeDisplay.cpp
 
-CMakeFiles/Exe.dir/src/Rubik.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Exe.dir/src/Rubik.cpp.i"
-	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\arekj\OneDrive\Pulpit\Rubik_My\src\Rubik.cpp > CMakeFiles\Exe.dir\src\Rubik.cpp.i
+CMakeFiles/Exe.dir/src/CubeDisplay.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Exe.dir/src/CubeDisplay.cpp.i"
+	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\arekj\OneDrive\Pulpit\Rubik_My\src\CubeDisplay.cpp > CMakeFiles\Exe.dir\src\CubeDisplay.cpp.i
 
-CMakeFiles/Exe.dir/src/Rubik.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Exe.dir/src/Rubik.cpp.s"
-	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\arekj\OneDrive\Pulpit\Rubik_My\src\Rubik.cpp -o CMakeFiles\Exe.dir\src\Rubik.cpp.s
+CMakeFiles/Exe.dir/src/CubeDisplay.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Exe.dir/src/CubeDisplay.cpp.s"
+	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\arekj\OneDrive\Pulpit\Rubik_My\src\CubeDisplay.cpp -o CMakeFiles\Exe.dir\src\CubeDisplay.cpp.s
 
 CMakeFiles/Exe.dir/src/Wall.cpp.obj: CMakeFiles/Exe.dir/flags.make
 CMakeFiles/Exe.dir/src/Wall.cpp.obj: ../src/Wall.cpp
@@ -127,7 +127,7 @@ CMakeFiles/Exe.dir/src/Element.cpp.s: cmake_force
 # Object files for target Exe
 Exe_OBJECTS = \
 "CMakeFiles/Exe.dir/src/main.cpp.obj" \
-"CMakeFiles/Exe.dir/src/Rubik.cpp.obj" \
+"CMakeFiles/Exe.dir/src/CubeDisplay.cpp.obj" \
 "CMakeFiles/Exe.dir/src/Wall.cpp.obj" \
 "CMakeFiles/Exe.dir/src/Element.cpp.obj"
 
@@ -135,7 +135,7 @@ Exe_OBJECTS = \
 Exe_EXTERNAL_OBJECTS =
 
 Exe.exe: CMakeFiles/Exe.dir/src/main.cpp.obj
-Exe.exe: CMakeFiles/Exe.dir/src/Rubik.cpp.obj
+Exe.exe: CMakeFiles/Exe.dir/src/CubeDisplay.cpp.obj
 Exe.exe: CMakeFiles/Exe.dir/src/Wall.cpp.obj
 Exe.exe: CMakeFiles/Exe.dir/src/Element.cpp.obj
 Exe.exe: CMakeFiles/Exe.dir/build.make

@@ -1,9 +1,9 @@
 #include <iostream>
-#include "Rubik.hpp"
-#include "Wall.hpp"
+#include "CubeDisplay.h"
+#include "Wall.h"
 #include <random>
 
-void shuffle(Rubik &rubik)
+void shuffle(CubeDisplay &cd)
 {
     std::random_device dev;
     std::mt19937 rng(dev());
@@ -13,32 +13,32 @@ void shuffle(Rubik &rubik)
     n = dist6(rng);
     for (int i = 0; i < n; i++)
     {
-        rubik.R();
+        cd.R();
     }
     n = dist6(rng);
     for (int i = 0; i < n; i++)
     {
-        rubik.L();
+        cd.L();
     }
     n = dist6(rng);
     for (int i = 0; i < n; i++)
     {
-        rubik.U();
+        cd.U();
     }
     n = dist6(rng);
     for (int i = 0; i < n; i++)
     {
-        rubik.D();
+        cd.D();
     }
     n = dist6(rng);
     for (int i = 0; i < n; i++)
     {
-        rubik.F();
+        cd.F();
     }
     n = dist6(rng);
     for (int i = 0; i < n; i++)
     {
-        rubik.B();
+        cd.B();
     }
 }
 
@@ -47,10 +47,10 @@ int main()
     // std::string s1[9] = {"a", "a", "a", "a", "a", "a", "a", "a", "a"};
     // Wall w1(s1);
     // Wall walls[6] = {w1, w1, w1, w1, w1, w1};
-    // Rubik rubik(walls);
-    Rubik rubik;
-    // shuffle(rubik);
-    rubik.show();
+    // CubeDisplay cd(walls);
+    CubeDisplay cd;
+    //  shuffle(cd);
+    cd.show();
 
     int input = 0;
     while (1)
@@ -76,70 +76,70 @@ int main()
         switch (input)
         {
         case 1:
-            rubik.R();
-            rubik.show();
+            cd.R();
+            cd.show();
             break;
         case 11:
-            rubik.Ri();
-            rubik.show();
+            cd.Ri();
+            cd.show();
             break;
         case 2:
-            rubik.L();
-            rubik.show();
+            cd.L();
+            cd.show();
             break;
 
         case 22:
-            rubik.Li();
-            rubik.show();
+            cd.Li();
+            cd.show();
             break;
 
         case 3:
-            rubik.U();
-            rubik.show();
+            cd.U();
+            cd.show();
             break;
 
         case 33:
-            rubik.Ui();
-            rubik.show();
+            cd.Ui();
+            cd.show();
             break;
 
         case 4:
-            rubik.D();
-            rubik.show();
+            cd.D();
+            cd.show();
             break;
 
         case 44:
-            rubik.Di();
-            rubik.show();
+            cd.Di();
+            cd.show();
             break;
 
         case 5:
-            rubik.F();
-            rubik.show();
+            cd.F();
+            cd.show();
             break;
 
         case 55:
-            rubik.Fi();
-            rubik.show();
+            cd.Fi();
+            cd.show();
             break;
 
         case 6:
-            rubik.B();
-            rubik.show();
+            cd.B();
+            cd.show();
             break;
 
         case 66:
-            rubik.Bi();
-            rubik.show();
+            cd.Bi();
+            cd.show();
             break;
 
         case 7:
-            rubik.init();
-            rubik.show();
+            cd.init();
+            cd.show();
             break;
         case 8:
-            shuffle(rubik);
-            rubik.show();
+            shuffle(cd);
+            cd.show();
             break;
         case 9:
             return 0;
