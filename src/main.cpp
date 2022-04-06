@@ -23,12 +23,12 @@ void shuffle(CubeDisplay &cd)
     // n = dist6(rng);
     // cd.B(n);
 
-    cd.R();
-    cd.L();
-    cd.U();
-    cd.D();
-    cd.F();
-    cd.B();
+    cd.R(2);
+    cd.L(1);
+    cd.U(1);
+    cd.D(1);
+    cd.F(1);
+    cd.B(1);
 }
 
 int main()
