@@ -54,11 +54,29 @@ void CubeDisplay::show()
               << std::endl;
 }
 
-void CubeDisplay::move(Wall &dst, int *dst_pos, Wall &src, int *src_pos)
+// m1 - src = wall[4]; m2 - dst = wall[4]
+void CubeDisplay::move(Wall &dst, int *dst_pos, Wall &src, int *src_pos, int mode)
 {
-    for (int i = 0; i < 3; i++)
+    if (mode == 0)
     {
-        dst.e[dst_pos[i]] = src.e[src_pos[i]];
+        for (int i = 0; i < 3; i++)
+        {
+            dst.e[dst_pos[i]] = src.e[src_pos[i]];
+        }
+    }
+    // src == wall[4]
+    else if (mode == 1)
+    {
+        dst.e[dst_pos[0]] = src.e[src_pos[2]];
+        dst.e[dst_pos[1]] = src.e[src_pos[1]];
+        dst.e[dst_pos[2]] = src.e[src_pos[0]];
+    }
+    // dst == wall[4]
+    else if (mode == 2)
+    {
+        dst.e[dst_pos[2]] = src.e[src_pos[0]];
+        dst.e[dst_pos[1]] = src.e[src_pos[1]];
+        dst.e[dst_pos[0]] = src.e[src_pos[2]];
     }
 }
 
@@ -128,8 +146,8 @@ void CubeDisplay::U(int n)
     {
         move(temp, t, walls[2], t);
         move(walls[2], t, walls[3], t);
-        move(walls[3], t, walls[4], t);
-        move(walls[4], t, walls[1], t);
+        move(walls[3], t, walls[4], t, 1);
+        move(walls[4], t, walls[1], t, 2);
         move(walls[1], t, temp, t);
 
         walls[0].rotateR();
@@ -142,8 +160,8 @@ void CubeDisplay::Ui(int n)
     {
         move(temp, t, walls[2], t);
         move(walls[2], t, walls[1], t);
-        move(walls[1], t, walls[4], t);
-        move(walls[4], t, walls[3], t);
+        move(walls[1], t, walls[4], t, 1);
+        move(walls[4], t, walls[3], t, 2);
         move(walls[3], t, temp, t);
 
         walls[0].rotateL();
@@ -157,8 +175,8 @@ void CubeDisplay::D(int n)
     {
         move(temp, b, walls[2], b);
         move(walls[2], b, walls[1], b);
-        move(walls[1], b, walls[4], b);
-        move(walls[4], b, walls[3], b);
+        move(walls[1], b, walls[4], b, 1);
+        move(walls[4], b, walls[3], b, 2);
         move(walls[3], b, temp, b);
 
         walls[5].rotateR();
@@ -171,8 +189,8 @@ void CubeDisplay::Di(int n)
     {
         move(temp, b, walls[2], b);
         move(walls[2], b, walls[3], b);
-        move(walls[3], b, walls[4], b);
-        move(walls[4], b, walls[1], b);
+        move(walls[3], b, walls[4], b, 1);
+        move(walls[4], b, walls[1], b, 2);
         move(walls[1], b, temp, b);
 
         walls[5].rotateL();
@@ -219,7 +237,7 @@ void CubeDisplay::B(int n)
         move(walls[5], b, walls[1], l);
         move(walls[1], l, temp, t);
 
-        walls[4].rotateR();
+        walls[4].rotateL();
     }
 }
 void CubeDisplay::Bi(int n)
@@ -232,6 +250,6 @@ void CubeDisplay::Bi(int n)
         move(walls[1], l, walls[5], b);
         move(walls[5], b, walls[3], r);
         move(walls[3], r, temp, t);
-        walls[4].rotateL();
+        walls[4].rotateR();
     }
 }

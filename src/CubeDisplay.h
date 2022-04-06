@@ -23,7 +23,7 @@ public:
 
     void init();
     void show();
-    void move(Wall &dst, int *dst_pos, Wall &src, int *src_pos);
+    void move(Wall &dst, int *dst_pos, Wall &src, int *src_pos, int mode = 0);
     void R(int n = 1);
     void Ri(int n = 1);
     void L(int n = 1);
