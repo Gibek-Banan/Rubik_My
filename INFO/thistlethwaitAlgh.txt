@@ -1,6 +1,0 @@
-Assumpptions:
-White - Top
-Yellow - Bottom
-Red - Front
-
-Phase 1:
