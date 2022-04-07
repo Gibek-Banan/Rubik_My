@@ -7,7 +7,7 @@ void shuffle(CubeDisplay &cd)
 {
     std::random_device dev;
     std::mt19937 rng(dev());
-    std::uniform_int_distribution<std::mt19937::result_type> dist6(0, 2); // distribution in range [1, 6]
+    std::uniform_int_distribution<std::mt19937::result_type> dist6(0, 2);
 
     int n;
     for (int i = 0; i < 3; i++)
@@ -25,23 +25,11 @@ void shuffle(CubeDisplay &cd)
         n = dist6(rng);
         cd.B(n);
     }
-
-    // cd.R(2);
-    // cd.L(1);
-    // cd.U(1);
-    // cd.D(1);
-    // cd.F(1);
-    // cd.B(1);
 }
 
 int main()
 {
-    // std::string s1[9] = {"a", "a", "a", "a", "a", "a", "a", "a", "a"};
-    // Wall w1(s1);
-    // Wall walls[6] = {w1, w1, w1, w1, w1, w1};
-    // CubeDisplay cd(walls);
     CubeDisplay cd;
-    //  shuffle(cd);
     cd.show();
 
     int input = 0;
