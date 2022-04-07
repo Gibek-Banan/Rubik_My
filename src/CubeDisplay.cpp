@@ -54,29 +54,20 @@ void CubeDisplay::show()
               << std::endl;
 }
 
-// m1 - src = wall[4]; m2 - dst = wall[4]
-void CubeDisplay::move(Wall &dst, int *dst_pos, Wall &src, int *src_pos, int mode)
+void CubeDisplay::move(Wall &dst, int *dst_pos, Wall &src, int *src_pos, bool swap)
 {
-    if (mode == 0)
+    if (swap == false)
     {
         for (int i = 0; i < 3; i++)
         {
             dst.e[dst_pos[i]] = src.e[src_pos[i]];
         }
     }
-    // src == wall[4]
-    else if (mode == 1)
+    else if (swap == true)
     {
         dst.e[dst_pos[0]] = src.e[src_pos[2]];
         dst.e[dst_pos[1]] = src.e[src_pos[1]];
         dst.e[dst_pos[2]] = src.e[src_pos[0]];
-    }
-    // dst == wall[4]
-    else if (mode == 2)
-    {
-        dst.e[dst_pos[2]] = src.e[src_pos[0]];
-        dst.e[dst_pos[1]] = src.e[src_pos[1]];
-        dst.e[dst_pos[0]] = src.e[src_pos[2]];
     }
 }
 
@@ -87,8 +78,8 @@ void CubeDisplay::R(int n)
     {
         move(temp, r, walls[2], r);
         move(walls[2], r, walls[5], r);
-        move(walls[5], r, walls[4], r);
-        move(walls[4], r, walls[0], r);
+        move(walls[5], r, walls[4], r, true);
+        move(walls[4], r, walls[0], r, true);
         move(walls[0], r, temp, r);
 
         walls[3].rotateR();
@@ -101,8 +92,8 @@ void CubeDisplay::Ri(int n)
     {
         move(temp, r, walls[2], r);
         move(walls[2], r, walls[0], r);
-        move(walls[0], r, walls[4], r);
-        move(walls[4], r, walls[5], r);
+        move(walls[0], r, walls[4], r, true);
+        move(walls[4], r, walls[5], r, true);
         move(walls[5], r, temp, r);
 
         walls[3].rotateL();
@@ -116,8 +107,8 @@ void CubeDisplay::L(int n)
     {
         move(temp, l, walls[2], l);
         move(walls[2], l, walls[0], l);
-        move(walls[0], l, walls[4], l);
-        move(walls[4], l, walls[5], l);
+        move(walls[0], l, walls[4], l, true);
+        move(walls[4], l, walls[5], l, true);
         move(walls[5], l, temp, l);
 
         walls[1].rotateR();
@@ -130,8 +121,8 @@ void CubeDisplay::Li(int n)
     {
         move(temp, l, walls[2], l);
         move(walls[2], l, walls[5], l);
-        move(walls[5], l, walls[4], l);
-        move(walls[4], l, walls[0], l);
+        move(walls[5], l, walls[4], l, true);
+        move(walls[4], l, walls[0], l, true);
         move(walls[0], l, temp, l);
 
         walls[1].rotateL();
@@ -146,8 +137,8 @@ void CubeDisplay::U(int n)
     {
         move(temp, t, walls[2], t);
         move(walls[2], t, walls[3], t);
-        move(walls[3], t, walls[4], t, 1);
-        move(walls[4], t, walls[1], t, 2);
+        move(walls[3], t, walls[4], t, true);
+        move(walls[4], t, walls[1], t, true);
         move(walls[1], t, temp, t);
 
         walls[0].rotateR();
@@ -160,8 +151,8 @@ void CubeDisplay::Ui(int n)
     {
         move(temp, t, walls[2], t);
         move(walls[2], t, walls[1], t);
-        move(walls[1], t, walls[4], t, 1);
-        move(walls[4], t, walls[3], t, 2);
+        move(walls[1], t, walls[4], t, true);
+        move(walls[4], t, walls[3], t, true);
         move(walls[3], t, temp, t);
 
         walls[0].rotateL();
@@ -175,8 +166,8 @@ void CubeDisplay::D(int n)
     {
         move(temp, b, walls[2], b);
         move(walls[2], b, walls[1], b);
-        move(walls[1], b, walls[4], b, 1);
-        move(walls[4], b, walls[3], b, 2);
+        move(walls[1], b, walls[4], b, true);
+        move(walls[4], b, walls[3], b, true);
         move(walls[3], b, temp, b);
 
         walls[5].rotateR();
@@ -189,8 +180,8 @@ void CubeDisplay::Di(int n)
     {
         move(temp, b, walls[2], b);
         move(walls[2], b, walls[3], b);
-        move(walls[3], b, walls[4], b, 1);
-        move(walls[4], b, walls[1], b, 2);
+        move(walls[3], b, walls[4], b, true);
+        move(walls[4], b, walls[1], b, true);
         move(walls[1], b, temp, b);
 
         walls[5].rotateL();
@@ -203,9 +194,9 @@ void CubeDisplay::F(int n)
     for (int i = 0; i < n; i++)
     {
         move(temp, b, walls[0], b);
-        move(walls[0], b, walls[1], r);
+        move(walls[0], b, walls[1], r, true);
         move(walls[1], r, walls[5], t);
-        move(walls[5], t, walls[3], l);
+        move(walls[5], t, walls[3], l, true);
         move(walls[3], l, temp, b);
 
         walls[2].rotateR();
@@ -218,9 +209,9 @@ void CubeDisplay::Fi(int n)
     {
         move(temp, b, walls[0], b);
         move(walls[0], b, walls[3], l);
-        move(walls[3], l, walls[5], t);
+        move(walls[3], l, walls[5], t, true);
         move(walls[5], t, walls[1], r);
-        move(walls[1], r, temp, b);
+        move(walls[1], r, temp, b, true);
 
         walls[2].rotateL();
     }
@@ -233,9 +224,9 @@ void CubeDisplay::B(int n)
     {
         move(temp, t, walls[0], t);
         move(walls[0], t, walls[3], r);
-        move(walls[3], r, walls[5], b);
+        move(walls[3], r, walls[5], b, true);
         move(walls[5], b, walls[1], l);
-        move(walls[1], l, temp, t);
+        move(walls[1], l, temp, t, true);
 
         walls[4].rotateL();
     }
@@ -246,9 +237,9 @@ void CubeDisplay::Bi(int n)
     for (int i = 0; i < n; i++)
     {
         move(temp, t, walls[0], t);
-        move(walls[0], t, walls[1], l);
+        move(walls[0], t, walls[1], l, true);
         move(walls[1], l, walls[5], b);
-        move(walls[5], b, walls[3], r);
+        move(walls[5], b, walls[3], r, true);
         move(walls[3], r, temp, t);
         walls[4].rotateR();
     }
