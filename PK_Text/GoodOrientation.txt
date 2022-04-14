@@ -1,1 +1,0 @@
-Good = Edge can be solved using only R L U  D

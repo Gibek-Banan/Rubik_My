@@ -52,10 +52,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\arekj\OneDrive\Pulpit\Rubik_My
+CMAKE_SOURCE_DIR = C:\dev\VSC_C++\Rubik_My
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\arekj\OneDrive\Pulpit\Rubik_My\build
+CMAKE_BINARY_DIR = C:\dev\VSC_C++\Rubik_My\build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Exe.dir/depend.make
@@ -71,58 +71,58 @@ include CMakeFiles/Exe.dir/flags.make
 CMakeFiles/Exe.dir/src/main.cpp.obj: CMakeFiles/Exe.dir/flags.make
 CMakeFiles/Exe.dir/src/main.cpp.obj: ../src/main.cpp
 CMakeFiles/Exe.dir/src/main.cpp.obj: CMakeFiles/Exe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\arekj\OneDrive\Pulpit\Rubik_My\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Exe.dir/src/main.cpp.obj"
-	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Exe.dir/src/main.cpp.obj -MF CMakeFiles\Exe.dir\src\main.cpp.obj.d -o CMakeFiles\Exe.dir\src\main.cpp.obj -c C:\Users\arekj\OneDrive\Pulpit\Rubik_My\src\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\dev\VSC_C++\Rubik_My\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Exe.dir/src/main.cpp.obj"
+	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Exe.dir/src/main.cpp.obj -MF CMakeFiles\Exe.dir\src\main.cpp.obj.d -o CMakeFiles\Exe.dir\src\main.cpp.obj -c C:\dev\VSC_C++\Rubik_My\src\main.cpp
 
 CMakeFiles/Exe.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Exe.dir/src/main.cpp.i"
-	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\arekj\OneDrive\Pulpit\Rubik_My\src\main.cpp > CMakeFiles\Exe.dir\src\main.cpp.i
+	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\dev\VSC_C++\Rubik_My\src\main.cpp > CMakeFiles\Exe.dir\src\main.cpp.i
 
 CMakeFiles/Exe.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Exe.dir/src/main.cpp.s"
-	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\arekj\OneDrive\Pulpit\Rubik_My\src\main.cpp -o CMakeFiles\Exe.dir\src\main.cpp.s
+	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\dev\VSC_C++\Rubik_My\src\main.cpp -o CMakeFiles\Exe.dir\src\main.cpp.s
 
 CMakeFiles/Exe.dir/src/CubeDisplay.cpp.obj: CMakeFiles/Exe.dir/flags.make
 CMakeFiles/Exe.dir/src/CubeDisplay.cpp.obj: ../src/CubeDisplay.cpp
 CMakeFiles/Exe.dir/src/CubeDisplay.cpp.obj: CMakeFiles/Exe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\arekj\OneDrive\Pulpit\Rubik_My\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Exe.dir/src/CubeDisplay.cpp.obj"
-	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Exe.dir/src/CubeDisplay.cpp.obj -MF CMakeFiles\Exe.dir\src\CubeDisplay.cpp.obj.d -o CMakeFiles\Exe.dir\src\CubeDisplay.cpp.obj -c C:\Users\arekj\OneDrive\Pulpit\Rubik_My\src\CubeDisplay.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\dev\VSC_C++\Rubik_My\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Exe.dir/src/CubeDisplay.cpp.obj"
+	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Exe.dir/src/CubeDisplay.cpp.obj -MF CMakeFiles\Exe.dir\src\CubeDisplay.cpp.obj.d -o CMakeFiles\Exe.dir\src\CubeDisplay.cpp.obj -c C:\dev\VSC_C++\Rubik_My\src\CubeDisplay.cpp
 
 CMakeFiles/Exe.dir/src/CubeDisplay.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Exe.dir/src/CubeDisplay.cpp.i"
-	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\arekj\OneDrive\Pulpit\Rubik_My\src\CubeDisplay.cpp > CMakeFiles\Exe.dir\src\CubeDisplay.cpp.i
+	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\dev\VSC_C++\Rubik_My\src\CubeDisplay.cpp > CMakeFiles\Exe.dir\src\CubeDisplay.cpp.i
 
 CMakeFiles/Exe.dir/src/CubeDisplay.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Exe.dir/src/CubeDisplay.cpp.s"
-	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\arekj\OneDrive\Pulpit\Rubik_My\src\CubeDisplay.cpp -o CMakeFiles\Exe.dir\src\CubeDisplay.cpp.s
+	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\dev\VSC_C++\Rubik_My\src\CubeDisplay.cpp -o CMakeFiles\Exe.dir\src\CubeDisplay.cpp.s
 
 CMakeFiles/Exe.dir/src/Wall.cpp.obj: CMakeFiles/Exe.dir/flags.make
 CMakeFiles/Exe.dir/src/Wall.cpp.obj: ../src/Wall.cpp
 CMakeFiles/Exe.dir/src/Wall.cpp.obj: CMakeFiles/Exe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\arekj\OneDrive\Pulpit\Rubik_My\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Exe.dir/src/Wall.cpp.obj"
-	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Exe.dir/src/Wall.cpp.obj -MF CMakeFiles\Exe.dir\src\Wall.cpp.obj.d -o CMakeFiles\Exe.dir\src\Wall.cpp.obj -c C:\Users\arekj\OneDrive\Pulpit\Rubik_My\src\Wall.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\dev\VSC_C++\Rubik_My\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Exe.dir/src/Wall.cpp.obj"
+	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Exe.dir/src/Wall.cpp.obj -MF CMakeFiles\Exe.dir\src\Wall.cpp.obj.d -o CMakeFiles\Exe.dir\src\Wall.cpp.obj -c C:\dev\VSC_C++\Rubik_My\src\Wall.cpp
 
 CMakeFiles/Exe.dir/src/Wall.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Exe.dir/src/Wall.cpp.i"
-	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\arekj\OneDrive\Pulpit\Rubik_My\src\Wall.cpp > CMakeFiles\Exe.dir\src\Wall.cpp.i
+	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\dev\VSC_C++\Rubik_My\src\Wall.cpp > CMakeFiles\Exe.dir\src\Wall.cpp.i
 
 CMakeFiles/Exe.dir/src/Wall.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Exe.dir/src/Wall.cpp.s"
-	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\arekj\OneDrive\Pulpit\Rubik_My\src\Wall.cpp -o CMakeFiles\Exe.dir\src\Wall.cpp.s
+	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\dev\VSC_C++\Rubik_My\src\Wall.cpp -o CMakeFiles\Exe.dir\src\Wall.cpp.s
 
 CMakeFiles/Exe.dir/src/Element.cpp.obj: CMakeFiles/Exe.dir/flags.make
 CMakeFiles/Exe.dir/src/Element.cpp.obj: ../src/Element.cpp
 CMakeFiles/Exe.dir/src/Element.cpp.obj: CMakeFiles/Exe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\arekj\OneDrive\Pulpit\Rubik_My\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Exe.dir/src/Element.cpp.obj"
-	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Exe.dir/src/Element.cpp.obj -MF CMakeFiles\Exe.dir\src\Element.cpp.obj.d -o CMakeFiles\Exe.dir\src\Element.cpp.obj -c C:\Users\arekj\OneDrive\Pulpit\Rubik_My\src\Element.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\dev\VSC_C++\Rubik_My\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Exe.dir/src/Element.cpp.obj"
+	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Exe.dir/src/Element.cpp.obj -MF CMakeFiles\Exe.dir\src\Element.cpp.obj.d -o CMakeFiles\Exe.dir\src\Element.cpp.obj -c C:\dev\VSC_C++\Rubik_My\src\Element.cpp
 
 CMakeFiles/Exe.dir/src/Element.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Exe.dir/src/Element.cpp.i"
-	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\arekj\OneDrive\Pulpit\Rubik_My\src\Element.cpp > CMakeFiles\Exe.dir\src\Element.cpp.i
+	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\dev\VSC_C++\Rubik_My\src\Element.cpp > CMakeFiles\Exe.dir\src\Element.cpp.i
 
 CMakeFiles/Exe.dir/src/Element.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Exe.dir/src/Element.cpp.s"
-	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\arekj\OneDrive\Pulpit\Rubik_My\src\Element.cpp -o CMakeFiles\Exe.dir\src\Element.cpp.s
+	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\dev\VSC_C++\Rubik_My\src\Element.cpp -o CMakeFiles\Exe.dir\src\Element.cpp.s
 
 # Object files for target Exe
 Exe_OBJECTS = \
@@ -142,7 +142,7 @@ Exe.exe: CMakeFiles/Exe.dir/build.make
 Exe.exe: CMakeFiles/Exe.dir/linklibs.rsp
 Exe.exe: CMakeFiles/Exe.dir/objects1.rsp
 Exe.exe: CMakeFiles/Exe.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\arekj\OneDrive\Pulpit\Rubik_My\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable Exe.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\dev\VSC_C++\Rubik_My\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable Exe.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Exe.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -154,6 +154,6 @@ CMakeFiles/Exe.dir/clean:
 .PHONY : CMakeFiles/Exe.dir/clean
 
 CMakeFiles/Exe.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\arekj\OneDrive\Pulpit\Rubik_My C:\Users\arekj\OneDrive\Pulpit\Rubik_My C:\Users\arekj\OneDrive\Pulpit\Rubik_My\build C:\Users\arekj\OneDrive\Pulpit\Rubik_My\build C:\Users\arekj\OneDrive\Pulpit\Rubik_My\build\CMakeFiles\Exe.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\dev\VSC_C++\Rubik_My C:\dev\VSC_C++\Rubik_My C:\dev\VSC_C++\Rubik_My\build C:\dev\VSC_C++\Rubik_My\build C:\dev\VSC_C++\Rubik_My\build\CMakeFiles\Exe.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Exe.dir/depend
 

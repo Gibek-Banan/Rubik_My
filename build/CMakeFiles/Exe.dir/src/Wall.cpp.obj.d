@@ -1,6 +1,5 @@
-CMakeFiles/Exe.dir/src/Wall.cpp.obj: \
- C:\Users\arekj\OneDrive\Pulpit\Rubik_My\src\Wall.cpp \
- C:\Users\arekj\OneDrive\Pulpit\Rubik_My\src\Wall.h \
+CMakeFiles/Exe.dir/src/Wall.cpp.obj: C:\dev\VSC_C++\Rubik_My\src\Wall.cpp \
+ C:\dev\VSC_C++\Rubik_My\src\Wall.h \
  C:/PROGRA~1/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream \
  C:/PROGRA~1/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
  C:/PROGRA~1/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
@@ -130,4 +129,4 @@ CMakeFiles/Exe.dir/src/Wall.cpp.obj: \
  C:/PROGRA~1/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/array \
  C:/PROGRA~1/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/utility \
  C:/PROGRA~1/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_relops.h \
- C:\Users\arekj\OneDrive\Pulpit\Rubik_My\src\Element.h
+ C:\dev\VSC_C++\Rubik_My\src\Element.h

@@ -1,6 +1,7 @@
 #include "CubeDisplay.h"
 #include <iostream>
 #include "Wall.h"
+#include <fstream>
 
 CubeDisplay::CubeDisplay(Wall *walls)
 {
@@ -53,7 +54,33 @@ void CubeDisplay::show()
     std::cout << "    " << s[5].substr(6, 3) << std::endl
               << std::endl;
 }
-
+void CubeDisplay::writeToFile(const std::string &path)
+{
+    std::ofstream f("../Files/" + path);
+    if (f.is_open())
+    {
+        std::string s[6];
+        for (int i = 0; i < 6; i++)
+        {
+            s[i] = walls[i].getStr();
+        }
+        f << "    " << s[0].substr(0, 3) << std::endl;
+        f << "    " << s[0].substr(3, 3) << std::endl;
+        f << "    " << s[0].substr(6, 3) << std::endl;
+        f << s[1].substr(0, 3) << " " << s[2].substr(0, 3) << " " << s[3].substr(0, 3) << " " << s[4].substr(0, 3) << std::endl;
+        f << s[1].substr(3, 3) << " " << s[2].substr(3, 3) << " " << s[3].substr(3, 3) << " " << s[4].substr(3, 3) << std::endl;
+        f << s[1].substr(6, 3) << " " << s[2].substr(6, 3) << " " << s[3].substr(6, 3) << " " << s[4].substr(6, 3) << std::endl;
+        f << "    " << s[5].substr(0, 3) << std::endl;
+        f << "    " << s[5].substr(3, 3) << std::endl;
+        f << "    " << s[5].substr(6, 3) << std::endl
+          << std::endl;
+        f.close();
+    }
+    else
+    {
+        std::cout << "Can't open a file!";
+    }
+}
 void CubeDisplay::move(Wall &dst, int *dst_pos, Wall &src, int *src_pos, bool swap)
 {
     if (swap == false)

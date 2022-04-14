@@ -23,6 +23,7 @@ public:
 
     void init();
     void show();
+    void writeToFile(const std::string &path);
     void move(Wall &dst, int *dst_pos, Wall &src, int *src_pos, bool swap = false);
     void R(int n = 1);
     void Ri(int n = 1);

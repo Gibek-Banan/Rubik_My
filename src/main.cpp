@@ -2,6 +2,7 @@
 #include "CubeDisplay.h"
 #include "Wall.h"
 #include <random>
+#include <string>
 
 void shuffle(CubeDisplay &cd)
 {
@@ -31,6 +32,15 @@ int main()
 {
     CubeDisplay cd;
     cd.show();
+
+    // //TEST
+    // for (int i = 1; i <= 10000; i++)
+    // {
+    //     shuffle(cd);
+    //     cd.writeToFile("colors" + std::to_string(i) + ".txt");
+    // }
+    // std::cout << "End!" << std::endl;
+    // //TEST
 
     int input = 0;
     while (1)
